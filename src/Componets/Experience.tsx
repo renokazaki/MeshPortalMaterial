@@ -4,6 +4,7 @@ import {
   MeshPortalMaterial,
   RoundedBox,
   CameraControls,
+  PortalMaterialType,
 } from "@react-three/drei";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
@@ -15,9 +16,9 @@ const Experience = () => {
   const Texture = useTexture("/public/texture/1.png");
 
   const [active, setActive] = useState(false);
-  const meshPortalMaterialRef = useRef();
-  const cameraControlsRef = useRef<CameraControls>();
-
+  // 修正された useRef
+  const meshPortalMaterialRef = useRef<PortalMaterialType | null>(null);
+  const cameraControlsRef = useRef<CameraControls | null>(null);
   const handleClick = () => {
     setActive(!active);
   };
