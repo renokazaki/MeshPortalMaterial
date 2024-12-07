@@ -3,7 +3,6 @@ import {
   useTexture,
   MeshPortalMaterial,
   RoundedBox,
-  Float,
   CameraControls,
   Text,
 } from "@react-three/drei";
