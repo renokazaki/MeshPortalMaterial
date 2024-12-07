@@ -52,7 +52,7 @@ const Experience = () => {
       <CameraControls ref={cameraControlsRef} />
 
       <Text position={[0, 1.5, 0.1]} fontSize={0.6}>
-        Eggs
+        Click this box
         <meshBasicMaterial toneMapped={false} />
       </Text>
 
