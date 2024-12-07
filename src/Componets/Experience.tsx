@@ -6,7 +6,6 @@ import {
   Float,
   CameraControls,
   Text,
-  PortalMaterialType,
 } from "@react-three/drei";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
@@ -21,7 +20,7 @@ const Experience = () => {
 
   // 修正済み useRef
   const cameraControlsRef = useRef<CameraControls | null>(null);
-  const meshPortalMaterialRef = useRef<PortalMaterialType | null>(null);
+  const meshPortalMaterialRef = useRef<THREE.ShaderMaterial | null>(null);
 
   const handleClick = () => {
     setActive(!active);
